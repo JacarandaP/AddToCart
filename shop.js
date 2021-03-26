@@ -248,11 +248,9 @@ $('#info').on("click", ".delete-prd",(function(event){
 /**
  * Validering av formulären
  */
-window.onload=function(){
-  let submitbtn = document.getElementById("confirmbtn")
-  submitbtn.addEventListener("click", function(event){
-     event.preventDefault()
-     validation = [];
+ 
+function test(){
+  validation = [];
 
      let inputName = document.getElementById("clientsName");
      if(isRequired(inputName.value) === false){
@@ -356,8 +354,15 @@ window.onload=function(){
       } else {
        alert("Please fill in the form with correct values");
       }
-   })
-  } 
+  
+    }
 
+    let submitbtn = document.getElementById("confirmbtn")
+    submitbtn.addEventListener("click", function(event){
+       event.preventDefault()
+       test();
+    
+})
+   
 });
 
