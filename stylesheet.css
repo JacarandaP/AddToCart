@@ -5,3 +5,31 @@ a {
   
   
 }
+
+.back {
+    font-family: 'Noto Sans JP', sans-serif; 
+    margin-left:15px;
+    height: 10rem;
+
+}
+
+div.finalTable{
+  margin-left:  25%;
+  margin-right: 25%;
+}
+
+#form{
+    margin-left:  25%;
+    margin-right: 25%;
+}
+#formdiv {
+    margin-left:  20%;
+    margin-right: 20%;
+}
+
+.form-field.error input {
+    border-color: var(--error-color);
+}
+
+
+

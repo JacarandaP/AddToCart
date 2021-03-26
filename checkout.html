@@ -4,9 +4,65 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous"> 
+    <link href="stylesheet.css" rel="stylesheet" >
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js" integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf" crossorigin="anonymous"></script>
+    <script src="shop.js"></script>
+    
+    <title>Checkout</title>
 </head>
 <body>
-    hi
+    <nav class="nav-bar nav-bar-light"  style="background-color: #e3f2fd; height: 3.5rem; font-weight:bolder" >
+        <a href="index.html" class="back"><img src="images/arrow.svg" alt="arrow"></img> Back to store</a>
+
+    </nav>
+    <h1 style="text-align: center;" >Your order</h1>
+    <div class="finalTable">
+    <table class="table table-bordered" id="table2" style="width:900px"> 
+        <thead>
+            <tr>
+                <th class="text-center py-3 px-4" style="min-width: 100px;">Product</th>
+                <th class="text-right py-3 px-4" style="width: 80px;">Price</th>
+                <th class="text-center py-3 px-4" style="width: 150px;">Quantity</th>
+                <th class="text-right py-3 px-4" style="width: 150px;">Total</th>
+            </tr>
+             </thead>
+             <tbody id="finalInfo">
+             </tbody>   
+        </table>
+        <div class="d-flex justify-content-start">
+            <h4 class="font-weight-bold">To pay: $<span id="FinalTotalPay" class="text-large"></span></h4>
+          </div>
+    </table>
+</div>
+<div class="form-field error" id="formdiv">
+    <h3 style="text-align: center;" >Your information</h3>
+    <form name="ConfirmForm" action="#" id="form" >
+        <p>Name: </p>
+        <input type="text" size="75" id="clientsName" name="Name">
+        <small id="input1"></small>
+        <br>
+        <p>Address: </p>
+        <input type="text"size="75" id="clientsAddress" name="Address"> 
+        <small id="input2"></small>
+        <br>
+        <p>E-mail Address: </p>
+        <input type="text" size="75" id="clientsMail" name="EMail">
+        <small id="input3"></small>
+        <br>
+        <p>Telephone (10 digits): </p>
+        <input type="text" size="75" id="clientsPhone" name="Telephone">
+        <small id="input4"></small>
+        <br>
+        <br>
+        <br>
+
+        <p>
+            <input type="button" 
+                   value="Submit" name="submit" id="confirmbtn">
+        </p>
+    
+</div>
 </body>
 </html>
