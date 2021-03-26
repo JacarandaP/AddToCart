@@ -248,7 +248,7 @@ $('#info').on("click", ".delete-prd",(function(event){
 /**
  * Validering av formulären
  */
- 
+ /*
 function test(){
   validation = [];
 
@@ -363,6 +363,6 @@ function test(){
        test();
     
 })
-   
-});
+   */
+})
 
