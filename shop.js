@@ -1,4 +1,5 @@
 $(document).ready(function(){
+  load();
   cart = [];
   function Product(name, price, amount) {
     this.name = name;
@@ -45,13 +46,16 @@ $(document).ready(function(){
     saveCart();
   }
   
-
+  function load(){
     let sourceApi = 'http://webacademy.se/fakestore/'
- fetch(sourceApi).then(function(response){
-  return response.json();}).then(function(json){
-       showProduct(json);
-    }
-  ).catch(error => console.error(error));
+    fetch(sourceApi).then(function(response){
+     return response.json();}).then(function(json){
+          showProduct(json);
+       }
+     ).catch(error => console.error(error));
+
+  }
+
     
 function showProduct(products){
   products.forEach((product) =>{
