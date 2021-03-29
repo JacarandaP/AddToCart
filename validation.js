@@ -1,13 +1,3 @@
-
-cart = []
-function loadCart() {
-    cart = JSON.parse(localStorage.getItem('cart'));
-
-  }
-  if (localStorage.getItem("cart") != null) {
-    loadCart();
-  }
-
   function saveCart(){
     localStorage.setItem('cart', JSON.stringify(cart));
   }
