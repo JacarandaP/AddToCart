@@ -59,7 +59,7 @@ function validateForm(){
         }
     
         function hasNumbers(input){
-          let characters= /^[a-zA-Z]*$/;
+          let characters= /^[a-zA-Z- X]*$/;
           if(input.match(characters)){
             validation.push("true");
             return true
