@@ -198,18 +198,18 @@ function discard(prdName){
 
 
 
-$('#info').on("click", ".minus-prd",(function(event){
+$('#info').on("click", ".minus-prd",(function(){
   let prdName = $(this).data('names');
   removeOne(prdName);
 
 }));
 
-$('#info').on("click", ".plus-prd",(function(event){
+$('#info').on("click", ".plus-prd",(function(){
   let prdName = $(this).data('names');
  addOne(prdName);
 }));
 
-$('#info').on("click", ".delete-prd",(function(event){
+$('#info').on("click", ".delete-prd",(function(){
   let prdName = $(this).data('names');
   discard(prdName);
 }))

@@ -113,12 +113,12 @@ function validateForm(){
     }
     
     let validationTest = validation.includes("false");
-  
         if(validationTest === false){
-          alert("your order has successfully been processed");
+        
+          alert("Your order has been received. Thank you")
           emptyCart()
          
-          
+         
         } else {
          alert("Please fill in the form with correct values");
         }
@@ -127,7 +127,7 @@ function validateForm(){
   
       let submitbtn = document.getElementById("confirmbtn")
       submitbtn.addEventListener("click", function(event){
-         event.preventDefault()
+         event.preventDefault();
          validateForm();
       
   })
